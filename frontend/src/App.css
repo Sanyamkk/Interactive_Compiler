@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap');
+
+:root {
+  --bg: #0f172a;
+  --bg-pane: #1e293b;
+  --text: #e2e8f0;
+  --accent: #3b82f6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.compile-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.compile-btn:hover {
+  transform: translateY(-2px);
+  background: #2563eb;
+}
+
+.compile-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  height: calc(100vh - 100px);
+}
+
+.pane {
+  flex: 1;
+  background: var(--bg-pane);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.pane h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+.code-editor {
+  flex: 1;
+  background: #0b1120;
+  color: #38bdf8;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+}
+
+.results-pane {
+  overflow-y: auto;
+}
+
+.section {
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.section h3 {
+  margin-top: 0;
+  color: #cbd5e1;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.errors ul, .symbols ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.errors li {
+  margin-bottom: 8px;
+  background: rgba(248, 113, 113, 0.1);
+  color: #fca5a5;
+  padding: 10px;
+  border-left: 4px solid #ef4444;
+  border-radius: 4px;
+}
+
+.ir pre {
+  color: #4ade80;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+}
+
+.symbols li {
+  padding: 6px 0;
+  color: #c084fc;
+  border-bottom: 1px dashed rgba(255,255,255,0.05);
+}
+
+.token-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.token {
+  background: #334155;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #93c5fd;
+  text-align: center;
+}
+
+.token small {
+  color: #cbd5e1;
+  display: block;
+  margin-top: 2px;
+}
+
+.placeholder {
+  color: #64748b;
+  text-align: center;
+  margin-top: 40px;
+}

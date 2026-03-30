@@ -1,0 +1,8 @@
+int main() {
+    int calc;
+    int calc;
+    undeclaredVar = 50;
+    int result;
+    result = calc + unknownVar;
+    print(notFound);
+}
