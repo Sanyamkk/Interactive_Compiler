@@ -117,3 +117,10 @@ print(z);
 ---
 
 *Enjoy exploring the magic of compilers! *
+
+
+<img width="1914" height="912" alt="image" src="https://github.com/user-attachments/assets/806b4574-6a2e-4fd5-85cc-27b265097c1c" />
+
+<img width="1914" height="813" alt="image" src="https://github.com/user-attachments/assets/85b140fc-0fc6-457d-b1d9-fe1b709b40e6" />
+
+<img width="672" height="617" alt="image" src="https://github.com/user-attachments/assets/20f3c29e-9f10-4a4c-8d64-a52162b8d732" />
