@@ -1,11 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <map>
-#include <sstream>
-#include <cctype>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 enum TokenType {
@@ -30,10 +23,9 @@ struct Error {
     int line;
 };
 
-// Global State
 vector<Token> tokens;
 vector<Error> errors;
-map<string, string> symbolTable; // name -> type
+map<string, string> symbolTable;
 vector<string> irCodes;
 size_t currentToken = 0;
 int tempCounter = 0;
