@@ -1,6 +1,6 @@
-#  Compiler PBL Project
+#  Interactive_Compiler Project
 
-Welcome to the **Compiler Project Based Learning (PBL)** repository! This project is a fully functional, interactive compiler built from scratch. It features a robust C++ backend that performs multiple phases of compilation and a modern React frontend that makes it easy and fun to visualize the compiler's inner workings.
+Welcome to the **Interactive_Compiler Project** repository! This project is a fully functional, interactive compiler built from scratch. It features a robust C++ backend that performs multiple phases of compilation and a modern React frontend that makes it easy and fun to visualize the compiler's inner workings.
 
 ---
 
