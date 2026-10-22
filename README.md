@@ -125,5 +125,6 @@ print(z);
 
 *Enjoy exploring the magic of compilers! *
 
+![alt text](image.png)
 
-
+![alt text](image-1.png)
